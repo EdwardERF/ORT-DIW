@@ -6,7 +6,8 @@
 body {
   font-family: 'Poppins', sans-serif;
   /* color: #909090; */
-  color: white;
+  /* color: white; */
+  color: black;
   height: 300vh;
 }
 
@@ -63,8 +64,84 @@ nav ul li a {
 }
 
 /* CSS MENU */
+.menu {
+  padding: 0 100px 25px;
+  background-color: #CACACA;
+}
 
+.menu h1 {
+  padding: 10px 0 20px 0;
+  font-weight: 700;
+  font-size: 2em;
+}
 
+.menu h2 {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+/* TEMPORAL */
+.menu article {
+  /* border: 1px solid red; */
+}
+
+.menu article img {
+  width: 100%;
+  height: calc(100% - 30px);
+  object-fit: cover;
+}
+
+.menu article {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu article h2 {
+  align-self: flex-end;
+}
+
+.contenedor-articulos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  gap: 5px;
+}
+
+.contenedor-articulos article:nth-child(1) {
+  /* border: 2px solid blue; */
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.contenedor-articulos article:nth-child(2) {
+  /* border: 2px solid blue; */
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.contenedor-articulos article:nth-child(3) {
+  /* border: 2px solid green; */
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.contenedor-articulos article:nth-child(4) {
+  /* border: 2px solid blue; */
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.contenedor-articulos article:nth-child(5) {
+  /* border: 2px solid greenyellow; */
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.contenedor-articulos article:nth-child(6) {
+  /* border: 2px solid aqua; */
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+}
 
 /* CSS NOVEDADES */
 
