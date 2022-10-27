@@ -5,7 +5,9 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: #909090;
+  /* color: #909090; */
+  color: white;
+  height: 300vh;
 }
 
 /* CSS HEADER */
@@ -40,8 +42,25 @@ nav ul li a {
 }
 
 /* CSS BIENVENIDA */
+.bienvenida {
+  height: 500px;
+  background-image: url(/img/bienvenida.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0 150px 150px 0;
+}
 
+.bienvenida div {
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
 
+.bienvenida article h1 {
+  font-size: 2.5em;
+}
 
 /* CSS MENU */
 
